@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 0;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* Buttons */
+.button {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  color: #D1E8E2;
+  align-items: center;
+  background-color: #2C3531;
+  border-radius: 4px;
+  margin-top: 2%;
+  font-size: 1.25em;
+}
+
+.button.long-text {
+  width: 150px;
+  justify-content: center;
+}
+
+.button-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper .button {
+  width: 150px;
+  height: 75px;
+  font-size: 1.5em;
+  margin: 15% 0;
+}
+
+.login-button,
+.register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+/* Header Styles */
+.main-title {
+  display: flex;
+  font-family: "Times New Roman", serif;
+  font-size: 4em;
+  padding: 10px 0;
+  margin: 20px auto;
+  justify-content: center;
+  color: #000;
+  background-color: #116466;
+  width: 100%;
+}
+
+.page h1 {
+  display: flex;
+  width: 90%;
+  font-family: "Times New Roman", serif;
+  padding: 20px 15px;
+  margin: 20px 5%;
+  background-color: #D1E8E2;
+}
+
+.page h2 {
+  display: flex;
+  width: 100%;
+  font-family: "Helvetica", sans-serif;
+  font-size: 2.5em;
+  padding: 20px 20px;
+  color: #FFF;
+  background-color: #116466;
+}
+
+.page h3 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  font-family: "Candara";
+  font-size: 2em;
+  padding: 10px 40px;
+  margin-left: 4%;
+  margin-right: 4%;
+  color: #FFF;
+  background-color: #116466;
+}
+
+.page p {
+  display: flex;
+  font-family: "Garamond";
+  font-size: 1.3em;
+}
+
+.page a {
+  font-family: "Garamond";
+  padding: 0 5px;
+}
+
+/* Section Styles */
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 20px auto;
+  background-color: #D1E8E2;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.fill-space {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.required {
+  color: #000;
+  padding-left: 3px;
+}
+
+.required-p {
+  justify-content: flex-end;
+}
+
+.login-wrapper,
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 33%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.login,
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background-color: #D1E8E2;
+  padding: 5% 5%;
+  margin: 2% auto;
+  border-radius: 10px;
+}
+
+.register {
+  height: 75%;
+}
+
+.login h2,
+.register h2 {
+  color: #000;
+  background-color: #D1E8E2;
+  justify-content: center;
+}
+
+.text-box {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  font-family: "Garamond";
+  font-size: 1.3em;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: 1px solid #000;
+  padding: 2%;
+}
+
+.login-wrapper .button,
+.register-wrapper .button {
+  padding: 2% 0;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.login-wrapper p,
+.register-wrapper p {
+  margin: 0 0;
+}
+
+.patch-notes {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  border-radius: 4px;
+  border: 2px solid #000;
+  margin: 2% 5%;
+}
+
+.patch-notes h1 {
+  border-radius: 4px;
+}
+
+.patch-notes p {
+  padding: 0 40px;
+}
+
+.patch-notes li p {
+  padding: 0 0;
+}
+
+.patch-notes-ul {
+  margin: 0 20%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: #116466;
+}
+
+.footer-icons {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #FFF;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Picture Styles */
+.picture-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  display: flex;
+  height: 100%;
+  width: 300px;
+}
+
+/* Menu */
+.bg-dark {
+  background-color: #2C3531 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFF;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  font-size: 1.25em;
+  color: #FFCB9A;
+}
+
+.navbar-dark .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: "Times New Roman", serif;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #FFF;
+}
+
+.nav-link.long-text {
+  width: 125px;
+}
+
+/* Icons */
+.iconify {
+  color: #FFF;
+  width: 50px;
+  height: 30px;
+}
+
+.github:hover {
+  color: #FFF;
+}
+
+.github:active {
+  color: #D9B08C;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+  .login-wrapper,
+  .register-wrapper {
+    width: 66%;
+    height: 33%;
+    align-items: center;
+  }
+  .text-box {
+    height: 20%;
+  }
+  .button {
+    margin-top: 10%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .login-wrapper,
+  .register-wrapper {
+    width: 66%;
+    height: 33%;
+    align-items: center;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page h1 {
+    display: flex;
+    width: 98%;
+    padding: 20px 15px;
+    margin: 20px 1%;
+  }
+
+  .page h3 {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .section-wrapper {
+    flex-direction: row;
+  }
+
+  .picture-wrapper {
+    width: 400px;
+  }
+
+  .button-wrapper .button {
+    width: 200px;
+    height: 100px;
+    font-size: 1.5em;
+    margin: 10% 0;
+  }
+
+  .picture {
+    width: 400px;
+  }
+
+  .login-wrapper .login-button,
+  .register-wrapper .register-button {
+    justify-content: flex-end;
+  }
+
+  .patch-notes-ul {
+    margin: 0 4%;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .logreg-items {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
